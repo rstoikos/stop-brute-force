@@ -1,13 +1,10 @@
-#!/bin/sh
-
-
 #########################################################################################################
 # This basic bash script uses two functions that return the ip address of the user that tried to access #
 # wp.login.php and xmlrpc.php more than 15 times, by simply checking 'apachectl fullstatus'.            #
 # Afterward the IP address of the attacker is passed to IP tables and a new rule is added.              #
-#                      																																									#
 #########################################################################################################
 
+#!/bin/sh
 
 
 return_attackerIP_for_wplogin () {	
